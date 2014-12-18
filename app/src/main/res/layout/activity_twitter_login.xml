@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/ImgUser"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop" />
+
+    <!-- Twitter Button -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button android:id="@+id/btnLoginTwitter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Login with Twitter"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dip"/>
+
+        <Button android:id="@+id/btnLogoutTwitter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout from Twitter"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A CardView that contains a TextView -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="250dp"
+    android:id="@+id/mainLayout"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    style="@style/BottyCard">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/cover"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="20dp"
+            android:background="@color/Dark_Gray"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape_touch"></FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal|bottom">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/twitter_logo_blue"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    style="@android:style/TextAppearance.Medium"
+                    android:id="@+id/handle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Hello"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_gravity="center_horizontal|bottom|right"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/tweet"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#555"
+        android:padding="5dp"
+        android:text="Tweettttting !!!!!!!!!!!!!!!!!"/>
+
+</LinearLayout>

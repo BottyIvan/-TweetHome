@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/ivanbotty/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/gson-2.3-e58d2ff48318583c657445a231f9eaad8d08ad47.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-98ac38111ade28ad71d393c7e5d4db19ea64fefe.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/.gradle/caches/modules-2/files-2.1/com.koushikdutta.async/androidasync/2.0.2/26b4453f50ad599a758ef3f8e19d1ec6a19f533e/androidasync-2.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="26b4453f50ad599a758ef3f8e19d1ec6a19f533e">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/androidasync-2.0.2-30f164c3c65ee2740ee5a50e368f36a406efbc23.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/classes-7e65978dccd6e2144d82cc8f2bc85b2bdcce52d1.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.pkmmte.view/circularimageview/1.1/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="c341a7ad32bc2eef9dcfab239262b77ac60788cc">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/classes-80c53d140f477949674c07276b1c792208115c67.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9346da9fb778af9e451211bbc3541daced174ba7">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-260779e345ab47d5c1e987ff336681f51899f6f5.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-a1f7e3d0c04d405b0e0787b3f5ab1ced04242b18.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/.gradle/caches/modules-2/files-2.1/org.twitter4j/twitter4j-core/4.0.2/6555e7c45f5db0006823731b2ddb536d481e11d1/twitter4j-core-4.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="6555e7c45f5db0006823731b2ddb536d481e11d1">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.2-5e8720f4827d767627337dc32a8739ea9942da6f.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="61965ae058916e6a57950dd61b0164dc866af19a">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/classes-9adf3c0ab3d3a68b165ce4053e834f8a178b8b2c.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/classes-4e1a0974809e88c61025bd5226d70da98f831ac7.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/classes-d7a6037425ed14fd715a634c4345205f95622395.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/classes-2fdb7c90d833008a2879e59773d61b8e9bce8140.jar" />
+    </item>
+    <item
+        jar="/home/ivanbotty/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.0.2/5c006951f0969f6a5b118cc298b0c5d68abd4c90/ion-2.0.2.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5c006951f0969f6a5b118cc298b0c5d68abd4c90">
+        <dex dex="/home/ivanbotty/AndroidStudioProjects/launcher/app/build/intermediates/pre-dexed/debug/ion-2.0.2-902a369d555f4c3be25cf62f37ca92f3d5ecd0a9.jar" />
+    </item>
+
+</items>

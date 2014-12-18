@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Botty" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/material_deep_teal_400</item>
+        <item name="colorPrimaryDark">@color/material_deep_teal_500</item>
+        <item name="colorAccent">@color/material_deep_teal_200</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Botty.RibbonTouch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="BottyCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/card_touch</item>
+    </style>
+
+    <style name="TitleTex">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large.Inverse</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Trasp.ActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Traslucent</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="ActionBar.Traslucent" parent="android:Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/trasp</item>
+        <item name="android:icon">@android:color/transparent</item>
+    </style>
+</resources>
