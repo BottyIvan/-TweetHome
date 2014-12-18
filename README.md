@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 TweetHome Project : A new Home for your device !
 ====
 <img style="width: 80%" src="https://raw.githubusercontent.com/BottyIvan/-TweetHome/master/app/screen/all_apps.png">
@@ -25,3 +26,9 @@ TweetHome Project : A new Home for your device !
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 </pre>
+=======
+-TweetHome
+==========
+
+A new Home for your device !
+>>>>>>> 2eca0a54cdbdc318bd08ea2f36456172545a2378
