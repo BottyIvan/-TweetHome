@@ -6,4 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">Home</string>
     <string name="title_activity_twitter_login">Login to Twitter</string>
+    <string name="title_activity_post_update">PostUpdate</string>
+
 </resources>

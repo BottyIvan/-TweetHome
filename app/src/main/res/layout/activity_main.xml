@@ -37,10 +37,6 @@
             android:layout_height="fill_parent"
             android:gravity="center">
 
-            <EditText android:id="@+id/txtUpdateStatus"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:visibility="visible" />
 
             <Button
                 android:layout_width="wrap_content"

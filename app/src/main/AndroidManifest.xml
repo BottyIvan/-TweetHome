@@ -4,6 +4,7 @@
     package="com.botty.launcher" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -38,6 +39,7 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.botty.launcher.MainActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,12 +48,22 @@
             <!-- need for Twitter4j -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="t4jsample"
                     android:scheme="oauth" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Twitter.PostUpdate"
+            android:label="@string/title_activity_post_update"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.botty.launcher.MainActivity" />
         </activity>
     </application>
 
