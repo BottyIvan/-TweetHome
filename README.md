@@ -1,5 +1,9 @@
 TweetHome Project : A new Home for your device !
 ====
+<img style="width: 80%" src="https://raw.githubusercontent.com/BottyIvan/-TweetHome/master/app/src/main/res/drawable-nodpi/web_hi_res_512.png">
+
+##Some screen:
+
 <img style="width: 80%" src="https://raw.githubusercontent.com/BottyIvan/-TweetHome/master/app/screen/all_apps.png">
 <img style="width: 80%" src="https://raw.githubusercontent.com/BottyIvan/-TweetHome/master/app/screen/tweet_Hometimeline.png">
 <img style="width: 80%" src="https://raw.githubusercontent.com/BottyIvan/-TweetHome/master/app/screen/twitttttt_it.png">
