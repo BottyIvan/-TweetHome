@@ -5,10 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridView;
 
-import com.botty.launcher.Adapters.DrawerAdapter;
-import com.botty.launcher.Helper.DrawerClickListener;
 import com.botty.launcher.R;
 
 /**

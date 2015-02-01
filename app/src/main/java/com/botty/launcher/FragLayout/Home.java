@@ -1,18 +1,22 @@
 package com.botty.launcher.FragLayout;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Toast;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.botty.launcher.R;
+import com.koushikdutta.ion.Ion;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import twitter4j.JSONArray;
@@ -48,32 +52,29 @@ public class Home extends Fragment {
     private static SharedPreferences mSharedPreferences;
     // adapter that holds tweets, obviously :)
     List<Status> statuses = new ArrayList<Status>();
+    private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View rootView = inflater.inflate(R.layout.activity_home, container, false);
-
         // Shared Preferences
         mSharedPreferences = getActivity().getSharedPreferences(
                 "#TweetHomePref", 0);
-        Button mbtn = (Button) rootView.findViewById(R.id.button_load);
-        mbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    ConfigurationBuilder builder = new ConfigurationBuilder();
 
-                    // GET THE CONSUMER KEY AND SECRET KEY FROM THE STRINGS XML
-                    String CONSUMER_KEY = TWITTER_CONSUMER_KEY;
-                    String CONSUMER_SECRET = TWITTER_CONSUMER_SECRET;
+        ArrayList<HashMap<String, String>> myTweet = new ArrayList<HashMap<String, String>>();
 
-                    // TWITTER ACCESS TOKEN
-                    String twit_access_token = mSharedPreferences.getString(PREF_KEY_OAUTH_TOKEN, null);
+        try {
+             ConfigurationBuilder builder = new ConfigurationBuilder();
 
-                    // TWITTER ACCESS TOKEN SECRET
+             // GET THE CONSUMER KEY AND SECRET KEY FROM THE STRINGS XML
+             String CONSUMER_KEY = TWITTER_CONSUMER_KEY;
+             String CONSUMER_SECRET = TWITTER_CONSUMER_SECRET;
+
+             // TWITTER ACCESS TOKEN
+             String twit_access_token = mSharedPreferences.getString(PREF_KEY_OAUTH_TOKEN, null);
+
+              // TWITTER ACCESS TOKEN SECRET
                     String twit_access_token_secret = mSharedPreferences.getString(PREF_KEY_OAUTH_SECRET, null);
 
                     builder.setOAuthConsumerKey(CONSUMER_KEY);
@@ -94,26 +95,68 @@ public class Home extends Fragment {
                     try {
                         String strInitialDataSet = DataObjectFactory.getRawJSON(statuses);
                         JSONArray JATweets = new JSONArray(strInitialDataSet);
-                        String tweets = "";
+                        JSONObject JOTweets;
+
                         for (int i = 0; i < JATweets.length(); i++) {
-                            JSONObject JOTweets = JATweets.getJSONObject(i);
+                            JOTweets = JATweets.getJSONObject(i);
                             Log.e("TWEETS", JOTweets.toString());
-                            int j = i+1;
-                            tweets += "Date:" + JOTweets.getString("created_at") + "\n";
-                            tweets += "Post:" + JOTweets.getString("text") + "\n\n";
-                            Toast.makeText(getActivity(),tweets,Toast.LENGTH_SHORT).show();
+                            Tweet tweet = new Tweet();
+                            tweet.content = JOTweets.getString("text");
+                            tweet.img = JOTweets.getString("profile_image_url");
+                            tweet.author = JOTweets.getString("from_user");
                         }
+
                     } catch (Exception e) {
                         // TODO: handle exception
                     }
-                } catch (Exception e) {
+
+        } catch (Exception e) {
                     // TODO: handle exception
                 }
+        return null;
+    }
+
+    private class TweetListAdaptor extends ArrayAdapter<Tweet> {
+
+        private ArrayList<Tweet> tweets;
+
+        public TweetListAdaptor(Context context,
+
+                                int textViewResourceId,
+                                ArrayList<Tweet> items) {
+            super(context, textViewResourceId, items);
+            this.tweets = items;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View v = convertView;
+            if (v == null) {
+                LayoutInflater vi = (LayoutInflater)
+                        getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                v = vi.inflate(R.layout.tweet, null);
             }
-        });
-        return rootView;
+            Tweet o = tweets.get(position);
+
+            TextView TweetText = (TextView) v.findViewById(R.id.tweet);
+            TextView TweetName = (TextView) v.findViewById(R.id.handle);
+            ImageView UserImage = (ImageView) v.findViewById(R.id.image);
+
+            TweetText.setText(o.content);
+            TweetName.setText(o.author);
+            Ion.with(UserImage).centerCrop().load(o.img);
+
+            return v;
+        }
+    }
+
+    public class Tweet {
+        String author = "";
+        String content = "";
+        String img = "";
     }
 }
+
 
 
 
